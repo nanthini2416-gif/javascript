@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let price = parseInt(prompt("enter a price"))
+        let quantity = 2
+        let tot = price * quantity
+        let gst_amt = tot * 0.12
+        let final_amt = tot + gst_amt
+        let discount = price - (price * 0.05)
+
+        document.write("total amount with gst", final_amt, "<br>")
+        document.write("discount 5%", discount)
+    </script>
+</body>
+
+</html>
