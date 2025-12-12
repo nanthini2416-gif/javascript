@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="username" value="Abi">
+    <input type="text" name="username" value="Nanthu">
+    <button onclick="Change()">Change value</button>
+
+    <script>
+        function Change() {
+            const a = document.getElementsByName("username")
+            for (i = 0; i < a.length; i++) {
+                a[i].value = "guest"
+            }
+        }
+    </script>
+</body>
+
+</html>

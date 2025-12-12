@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <script>
-        var num = [10, 60, 30, 80, 40]
-        var n = num.find(nums => nums > 50)
-        document.write(n)
+        const person = {info:{height:170, weight:60}};
+        const {info :{height,weight}} = person
+        document.write(height,":",weight)
     </script>
 </body>
-
 </html>

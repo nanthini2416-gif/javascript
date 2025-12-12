@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="imgBox">
+    <img src="./lotus.jpg" name="flower" id="oldImg">
+    </div>
+    <button onclick="Change()">Change Image</button>
+    <script>
+    function Change() {
+    let box = document.getElementById("imgBox");      
+    let oldImg = document.getElementById("oldImg");   
+    let newImg = document.createElement("img");      
+    newImg.src = "./nature.jpg";                     
+    newImg.name = "flower";                         
+    newImg.id = "oldImg";                         
+
+    box.replaceChild(newImg, oldImg);              
+}
+</script>
+
+</body>
+</html>

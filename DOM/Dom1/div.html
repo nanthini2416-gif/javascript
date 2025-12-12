@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" style="height: 100px; width: 100px; background-color: blueviolet;"></div><br>
+    <div class="box" style="height: 100px; width: 100px; background-color: purple;"></div>
+    <button onclick="Change()">Change color</button>
+    <script>
+    function Change() {
+        let a = document.getElementsByClassName("box");
+
+        for (let i = 0; i < a.length; i++) {
+            a[i].style.backgroundColor = "lightblue"; 
+        }
+    }
+    </script>
+</body>
+</html>

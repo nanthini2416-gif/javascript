@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="para">
+    <p id="para1">Artificial Intelligence (AI) is the ability of a computer or machine to perform tasks that typically require human intelligence</p>
+    <p id="para2">Essentially, it's creating systems that mimic human cognitive functions to solve complex problems and automate processes.  </p>
+    </div>
+    <script>
+        let para1=document.getElementById("para1")
+        let para2=document.getElementById("para2")
+        let para3=document.createElement("para3")
+        para3.textContent="AI excels at processing massive datasets rapidly to uncover insights, far beyond human capacity. "
+        document.getElementById("para").replaceChild(para3,para2)
+</script>
+</body>
+</html>
